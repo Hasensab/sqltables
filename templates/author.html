@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Page</title>
+    <style>
+        table{
+           
+            border-collapse: collapse;
+            border-radius: 3px;
+            width: 100px;
+            height: 150px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <center>
+        <table border="2px solid black">
+            <caption>Author Table</caption>
+            <tr>
+                <th>Author_id</th>
+                <th>Author_name</th>
+            </tr>
+            {% for ao in author %}
+                <tr>
+                    <td>{{ ao.Author_id }}</td>
+                    <td>{{ ao.Author_name }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
