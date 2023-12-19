@@ -23,6 +23,7 @@ urlpatterns = [
     path('display_dept/',display_dept,name='display_dept'),
     path('display_emp/',display_emp,name='display_emp'),
     path('display_author/',display_author,name='display_author'),
+    path('insert_data',insert_data,name='insert_data')
 
 
 ]
